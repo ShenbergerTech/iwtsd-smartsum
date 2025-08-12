@@ -9,6 +9,11 @@ dependencies = [
     "django>=5.2.5",
     "faster-whisper>=1.2.0",
     "jiwer>=4.0.0",
+    "langchain>=0.3.27",
+    "langchain-community>=0.3.27",
+    "langchain-core>=0.3.74",
+    "langchain-ollama>=0.3.6",
     "pyannote-audio>=3.3.2",
+    "pymupdf>=1.26.3",
     "sumy>=0.11.0",
 ]

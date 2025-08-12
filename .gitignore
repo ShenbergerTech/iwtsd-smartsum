@@ -1,0 +1,7 @@
+smartsum/media/
+iwtsd/media/attachments/
+/iwtsd/smartsum/__pycache__
+/iwtsd/smartsum/management/__pycache__
+/iwtsd/smartsum/management/commands/__pycache__
+/iwtsd/smartsum/migrations
+/iwtsd/iwtsd/__pycache__

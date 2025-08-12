@@ -1,0 +1,14 @@
+[project]
+name = "fw-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "argostranslate>=1.9.6",
+    "django>=5.2.5",
+    "faster-whisper>=1.2.0",
+    "jiwer>=4.0.0",
+    "pyannote-audio>=3.3.2",
+    "sumy>=0.11.0",
+]

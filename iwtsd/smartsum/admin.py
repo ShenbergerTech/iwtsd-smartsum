@@ -1,6 +1,6 @@
 from django.contrib import admin
 from .models import Project, Media, Transcript, TranscriptSegment, Translation
-from .actions import transcribe, translate_he, translate_en, summarize
+from .actions import transcribe, translate_he, translate_en, translate_ts, summarize
 
 
 class MediaInline(admin.TabularInline):
@@ -24,7 +24,7 @@ class TranscriptAdmin(admin.ModelAdmin):
 	list_display = ('media', 'language', 'snippet', 'wer', 'time_elapsed')
 	list_filter = ('language',)
 	exclude = ('ts_start', 'ts_end')
-	actions = [summarize]  # ,translate
+	actions = [translate_ts, summarize]  # ,translate
 
 
 class TranslationAdmin(admin.ModelAdmin):

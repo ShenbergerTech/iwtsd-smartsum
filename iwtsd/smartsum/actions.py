@@ -1,6 +1,7 @@
 import re
 from datetime import datetime
 from .models import Project, Media, Transcript, TranscriptSegment, Translation, TranslationSegment
+from django.http import HttpResponseRedirect
 from faster_whisper import WhisperModel
 from transformers import pipeline
 from typing import Union, List
@@ -67,7 +68,21 @@ translate_he.short_description = 'Translate to Hebrew'
 translate_en.short_description = 'Translate to English'
 
 
-#    segments, info = model.transcribe("audio.mp3", beam_size=5, task="translate")
+def translate_ts(modeladmin, request, queryset):
+	for ts in queryset:
+		from_code = ts.language
+		to_code = 'en'
+		translatedText = argostranslate.translate.translate(ts.full, from_code, to_code)
+		t = Translation.objects.create(
+			transcript = ts,
+			media = ts.media,
+			title = ts.media.title,
+			language = to_code,
+			full = translatedText
+		)
+	return HttpResponseRedirect(f'/admin/smartsum/translation/{ts.id}/')
+
+translate_ts.short_description = 'Translate - EN'
 
 
 def summarize(modeladmin, request, queryset):

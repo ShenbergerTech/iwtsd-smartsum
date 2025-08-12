@@ -1,8 +1,8 @@
 smartsum/media/
 iwtsd/media/attachments/
+iwtsd/smartsum/migrations/__pycache__/
+/iwtsd/iwtsd/__pycache__
 /iwtsd/smartsum/__pycache__
 /iwtsd/smartsum/management/__pycache__
 /iwtsd/smartsum/management/commands/__pycache__
 /iwtsd/smartsum/migrations
-/iwtsd/iwtsd/__pycache__
-iwtsd/db.sqlite3

@@ -1,6 +1,6 @@
 # IWTSD Smart Summary Installation Guide
 
-This guide provides step-by-step instructions to install and set up the IWTS project on Windows.
+This guide provides step-by-step instructions to install and set up the IWTSD Smart Summary project on Windows.
 
 ## Prerequisites
 

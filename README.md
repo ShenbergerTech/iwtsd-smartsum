@@ -36,6 +36,7 @@ Add the following NVIDIA library paths to your system PATH:
 
    ```Command Prompt
    pip install uv
+   uv venv
    uv pip install torch torchvision --index-url https://download.pytorch.org/whl/cu129
    uv add argostranslate django faster-whisper jiwer pyannote-audio transformers[torch] langchain langchain-ollama langchain-community langchain-core
    ```

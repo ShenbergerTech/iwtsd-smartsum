@@ -48,6 +48,7 @@ Add the following NVIDIA library paths to your system PATH:
    ```Command Prompt
    cd iwtsd
    uv run ./manage.py makemigrations
+   uv run ./manage.py makemigrations smartsum
    uv run ./manage.py migrate
    uv run ./manage.py createsuperuser
    ```

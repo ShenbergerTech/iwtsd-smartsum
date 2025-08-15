@@ -40,7 +40,7 @@ class Command(BaseCommand):
 		argostranslate.package.install_from_path(package_to_install.download())
 
 		from_code = "en"  # English
-		to_code = "fa"    # Farsi
+		to_code = "he"    # Hebrew
 
 		# Find and install the required language package
 		print(f'Downloading {from_code} to {to_code}...')
